@@ -56,11 +56,16 @@ End Menu Bar
 Start World cup section
 ---------------------*/
 
-.container{
+/* .container{
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #2d25a0; 
+} */
+.container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #2d25a0;
 }
 
 .container:hover{
@@ -141,8 +146,15 @@ End World cup section
 Start highlight section
 ---------------------*/
 
-.highlight{
+}
+.match-review{
     display: flex;
+    flex-direction: column;
+   
+}
+.highlight{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     margin-top: 165px;
 }
 
@@ -239,16 +251,33 @@ For mobile device
 ---------------------*/
 
 @media only screen and (max-width:688px){
+   .container, .players, .highlight, .icons{
+       width: 100%;
+   }
+   
+   
+    nav{
+       display: none;
+   }
+   .container{
+       display: grid;
+       grid-template-columns: repeat(1, 1fr);
+   }
+   .container:hover{
+       transform: none;
+
+   }
+   
     .players{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
-    .container{
-        width:100%;
-    }
-    .container .highlight-info{
-        flex-direction: column;
-    }
+    .highlight{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+}
+.match-photo{
+    margin-top: 160px;
 }
 
 /* ------------------
@@ -260,7 +289,7 @@ For tablet device
         .players{
             grid-template-columns: repeat(2, 1fr);
         }
-        .container{
+        .container .highlight-info{
             width:100%;
         }
         .container .highlight-info{

@@ -282,8 +282,7 @@ For mobile device
     }
     
     .banner img{
-        width: 330px;
-        height:260px;
+        width: 100%;
     }
     .highlight{
         display: grid;
@@ -322,15 +321,68 @@ For tablet device
 ---------------------*/
 
 @media only screen and (min-width: 688px) and (max-width:992px){
-    @media only screen and (max-widht:688px){
-        .players{
-            grid-template-columns: repeat(2, 1fr);
-        }
-        .container .highlight-info{
-            width:100%;
-        }
-        .container .highlight-info{
-            flex-direction: column;
-        }
+    body{
+        width: 100%;
     }
+    nav{
+       display: none;
+   }
+   .container{
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
+   }
+   .container:hover{
+       transform: none;
+
+   }
+   .world-cup{
+       padding: 46px 16px 10px 66px;
+       margin: 0;
+   }
+   .world-cup h1{
+       margin: 0;
+       padding: 0px;
+       font-size: 36px;
+       line-height: 50px;
+   }
+    .players{
+        display: grid;
+        grid-template-columns: repeat (2, 1fr);
+        margin: 42px 15px 15px 15px;
+    }
+    
+    .banner img{
+        width: 100%;
+    }
+    .highlight{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0px;
+        margin-left: 0px;
+        padding: 0px;
+    }
+.highlight-info{
+    width: 100%;
+    margin: 30px 15px;
+}
+.photo{
+    width: 320px;
+    margin: 15px;
+}
+.match-photo{
+    margin-top: 160px;
+}
+
+.icons{
+    margin: 15px;
+    padding: 0;
+}
+.icons p, span{
+    justify-content: center;
+    align-items: center;
+}
+.icons img{
+    width: 300px;
+}
+
 }

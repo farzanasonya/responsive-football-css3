@@ -238,7 +238,7 @@ Start Media Query
 For mobile device
 ---------------------*/
 
-@media only screen and (max-widht:688px){
+@media only screen and (max-width:688px){
     .players{
         display: grid;
         grid-template-columns: repeat(1, 1fr);

@@ -146,7 +146,7 @@ End World cup section
 Start highlight section
 ---------------------*/
 
-}
+
 .match-review{
     display: flex;
     flex-direction: column;
@@ -290,32 +290,36 @@ For mobile device
         margin: 0px;
         margin-left: 0px;
         padding: 0px;
+        width:320px;
     }
-.highlight-info{
+    .highlight-info{
     width: 100%;
     margin: 30px 15px;
-}
-.photo{
+    }
+    /* .highlight-info p{
+        width:320px;
+    } */
+    .photo{
     width: 320px;
     margin: 15px;
-}
-.match-photo{
+    }
+    .match-photo{
     margin-top: 160px;
-}
+    }
 
-.icons{
+    .icons{
+        width: 100%;
     margin: 15px;
     padding: 0;
-}
-.icons p, span{
+    }
+    .icons p, span{
     justify-content: center;
     align-items: center;
-}
-.icons img{
+    }
+    .icons img{
     width: 300px;
+    }
 }
-
-
 /* ------------------
 For tablet device
 ---------------------*/
@@ -347,7 +351,7 @@ For tablet device
    }
     .players{
         display: grid;
-        grid-template-columns: repeat (2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         margin: 42px 15px 15px 15px;
     }
     
@@ -361,28 +365,28 @@ For tablet device
         margin-left: 0px;
         padding: 0px;
     }
-.highlight-info{
+    .highlight-info{
     width: 100%;
     margin: 30px 15px;
-}
-.photo{
+    }
+   
+    .photo{
     width: 320px;
     margin: 15px;
-}
-.match-photo{
+    }
+    .match-photo{
     margin-top: 160px;
-}
+    }
 
-.icons{
+    .icons{
     margin: 15px;
     padding: 0;
-}
-.icons p, span{
+    }
+    .icons p, span{
     justify-content: center;
     align-items: center;
-}
-.icons img{
+    }
+    .icons img {
     width: 300px;
-}
-
+    }
 }

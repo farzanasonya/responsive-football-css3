@@ -238,6 +238,7 @@ Start icon section
     height: 110px;
 }
 
+
 /* ------------------
 End icon section
 ---------------------*/
@@ -318,6 +319,13 @@ For mobile device
     }
     .icons img{
     width: 300px;
+    }
+    .header, .container, .second-section, .match-review, .icons{
+        width: 100%;
+    }
+    .banner img{
+        width: 100%;
+        padding: 0;
     }
 }
 /* ------------------
